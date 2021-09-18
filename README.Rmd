@@ -31,3 +31,27 @@ The current version can be installed from
 # install.packages("remotes")
 remotes::install_github("brunomontezano/HCLpsychometrics")
 ```
+
+## Examples
+
+```{r}
+library(HCLpsychometrics)
+
+# First, the models to be tested are created
+created_models <- create_models()
+
+# Then, we can fit these models on given dataset
+# that contains yX as variable names, X being numbers from 1 to 32
+fitted_models <- fit_models(
+  data = hcl,
+  models = created_models
+)
+
+# Finally, I could for example, summarize the parameters
+# (In this case, I just printed the first 3 rows to save space)
+summarize_parameters(
+  fits = fitted_models
+  ) %>% purrr::map(head, 3)
+
+```
+
