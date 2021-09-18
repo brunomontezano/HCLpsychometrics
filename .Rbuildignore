@@ -1,2 +1,4 @@
 ^HCLpsychometrics\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^data-raw$

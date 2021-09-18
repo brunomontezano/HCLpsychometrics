@@ -3,3 +3,5 @@
 .Rdata
 .httr-oauth
 .DS_Store
+data-raw/banco-suelen-coorte-t1-t2.sav
+data/DATASET.rda
