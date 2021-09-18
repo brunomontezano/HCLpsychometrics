@@ -94,7 +94,8 @@ summarize_parameters <- function(fits) {
         SE = se,
         Z = z,
         "p-value" = pvalue,
-        Beta = std.all)
+        Beta = std.all) %>%
+      dplyr::arrange(dplyr::desc(Beta))
   )
 
   return(tables)
