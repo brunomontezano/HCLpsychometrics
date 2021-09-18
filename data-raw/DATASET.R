@@ -3,6 +3,8 @@ raw <- haven::read_spss(
   file = "data-raw/banco-suelen-coorte-t1-t2.sav"
 )
 
+set.seed(666)
+
 DATASET <- raw %>%
   janitor::clean_names() %>%
   dplyr::select(
@@ -17,6 +19,7 @@ DATASET <- raw %>%
     ~ stringr::str_replace_all(
       stringr::str_remove_all(string = .x, pattern = "_t1"), "hcl3", "y"
     )
-  )
+  ) %>%
+  dplyr::sample_frac(size = 0.1)
 
 usethis::use_data(DATASET, overwrite = TRUE)

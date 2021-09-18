@@ -1,9 +1,9 @@
-#' HCL-32 items
+#' HCL-32 items in a subsample
 #'
 #' A dataset containing the 32 items from the HCL-32, instrument used to
 #' assess hypomania symptoms.
 #'
-#' @format A data frame with 1203 rows and 32 variables:
+#' @format A data frame with 120 rows (10% of total sample) and 32 variables:
 #' \describe{
 #'   \item{y1}{I need less sleep}
 #'   \item{y2}{I feel more energetic and more active}

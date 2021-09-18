@@ -3,9 +3,9 @@
 \docType{data}
 \name{DATASET}
 \alias{DATASET}
-\title{HCL-32 items}
+\title{HCL-32 items in a subsample}
 \format{
-A data frame with 1203 rows and 32 variables:
+A data frame with 120 rows (10\% of total sample) and 32 variables:
 \describe{
 \item{y1}{I need less sleep}
 \item{y2}{I feel more energetic and more active}
