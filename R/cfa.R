@@ -5,27 +5,28 @@
 #'
 create_models <- function() {
 
-  bech <- 'active =~ y2 + y28 + y11 +
+  bech <- 'Active =~ y2 + y28 + y11 +
   y5 + y18 + y4 + y15 + y20 +
   y10 + y1
-  risk =~ y23 + y8 + y9 + y25 +
+  Risk =~ y23 + y8 + y9 + y25 +
   y21 + y31 + y29 + y7 + y27 + y32'
 
-  forty <- 'active =~ y1 + y4 + y6 +
+  forty <- 'Active =~ y1 + y4 + y6 +
   y10 + y13 + y17 + y19 + y20 + y28
-  risk =~ y8 + y9 + y14 + y27 +
+  Risk =~ y8 + y9 + y14 + y27 +
   y30 + y31 + y32'
 
-  author <- 'active =~ y2 + y3 + y4 +
-  y5 + y6 + y10 + y11 + y12 + y13 + y15 +
-  y16 + y17 + y18 + y19 + y20 +
-  y21 + y22 + y24 + y28
-  risk =~ y8 + y9 + y25 + y26 +
-  y27 + y29 + y30 + y31 + y32'
+  hcl28 <- 'Active =~ y2 + y3 + y4 + y5 + y6 +
+  y10 + y11 + y12 + y13 + y14 +
+  y15 + y18 + y19 + y20 + y22 +
+  y24 + y28
+  Risk =~ y1 + y7 + y8 + y9 + y25 +
+  y26 + y27 + y29 + y30 +
+  y31 + y32'
 
-  models <- list(bech, forty, author) %>%
+  models <- list(bech, forty, hcl28) %>%
     purrr::set_names(
-      nm = c("bech", "forty", "author")
+      nm = c("Bech", "Forty", "HCL-28")
     )
 
   return(models)
