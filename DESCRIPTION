@@ -19,6 +19,7 @@ Imports:
     janitor,
     lavaan,
     magrittr,
+    psych,
     purrr,
     tidyr
 Depends: 

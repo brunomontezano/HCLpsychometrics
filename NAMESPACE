@@ -3,6 +3,7 @@
 export("%>%")
 export(create_models)
 export(fit_models)
+export(ord_alpha)
 export(summarize_fit)
 export(summarize_parameters)
 importFrom(magrittr,"%>%")
