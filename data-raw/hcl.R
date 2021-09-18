@@ -1,11 +1,10 @@
-## code to prepare `DATASET` dataset goes here
 raw <- haven::read_spss(
   file = "data-raw/banco-suelen-coorte-t1-t2.sav"
 )
 
 set.seed(666)
 
-DATASET <- raw %>%
+hcl <- raw %>%
   janitor::clean_names() %>%
   dplyr::select(
     dplyr::starts_with("hcl3")
@@ -22,4 +21,4 @@ DATASET <- raw %>%
   ) %>%
   dplyr::sample_frac(size = 0.1)
 
-usethis::use_data(DATASET, overwrite = TRUE)
+usethis::use_data(hcl, overwrite = TRUE)
