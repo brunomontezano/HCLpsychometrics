@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/brunomontezano/HCLpsychometrics/workflows/R-CMD-check/badge.svg)](https://github.com/brunomontezano/HCLpsychometrics/actions)
 <!-- badges: end -->
 
-The objective of `HCLpsychometrics` is to provide functions to perform the analyzes used in a study on the factor structure of the HCL-32 instrument in a population sample. The package has functions for executing routines for confirmatory factor analysis and ordinal alpha
+The objective of `HCLpsychometrics` is to provide functions to perform the analyzes used in a study on the factor structure of the HCL-32 instrument in a population sample. The package has functions for executing routines for confirmatory factor analysis and Cronbach's alpha
 coefficient estimation. 
 
 #### Note
@@ -37,6 +37,8 @@ remotes::install_github("brunomontezano/HCLpsychometrics")
 ```
 
 ## Examples
+
+### Confirmatory factor analysis
 
 ```{r}
 library(HCLpsychometrics)
@@ -56,5 +58,13 @@ fitted_models <- fit_models(
 summarize_parameters(
   fits = fitted_models
   ) %>% purrr::map(head, 3)
+```
+
+## Cronbach's alpha
+
+```{r}
+# The alpha_authors_model function can be used to calculate Cronbach's
+# alpha based on the author's model in the input dataset
+HCLpsychometrics::alpha_authors_model(hcl)
 ```
 

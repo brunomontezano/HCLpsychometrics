@@ -11,7 +11,7 @@
 The objective of `HCLpsychometrics` is to provide functions to perform
 the analyzes used in a study on the factor structure of the HCL-32
 instrument in a population sample. The package has functions for
-executing routines for confirmatory factor analysis and ordinal alpha
+executing routines for confirmatory factor analysis and Cronbach’s alpha
 coefficient estimation.
 
 #### Note
@@ -31,6 +31,8 @@ remotes::install_github("brunomontezano/HCLpsychometrics")
 ```
 
 ## Examples
+
+### Confirmatory factor analysis
 
 ``` r
 library(HCLpsychometrics)
@@ -67,4 +69,20 @@ summarize_parameters(
 #> 1 active  y28 1.607 0.311 5.168       0 0.973
 #> 2 active  y19 1.482 0.293 5.064       0 0.897
 #> 3 active   y3 1.469 0.294 4.994       0 0.889
+```
+
+## Cronbach’s alpha
+
+``` r
+# The alpha_authors_model function can be used to calculate Cronbach's
+# alpha based on the author's model in the input dataset
+HCLpsychometrics::alpha_authors_model(hcl)
+#> $`Full data`
+#> [1] 0.9039601
+#> 
+#> $`Active factor`
+#> [1] 0.9193251
+#> 
+#> $`Risk-taking factor`
+#> [1] 0.6178503
 ```
