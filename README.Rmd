@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# HCL-32 psychometric properties
+# HCL-32 Psychometric Properties
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/brunomontezano/HCLpsychometrics/workflows/R-CMD-check/badge.svg)](https://github.com/brunomontezano/HCLpsychometrics/actions)
@@ -24,7 +24,7 @@ coefficient estimation.
 
 #### Note
 
-This repository is not intended to be used by others. It is a package aggregating several tools used to replicate the specific analysis of an article.
+This repository is not intended to be used by others. It is a package aggregating several tools used to replicate the specific analysis of an article. The dataset named `hcl` inside the package contains an example tibble (10% of the original sample) to check the proper functioning and give an idea on how the package works.
 
 ## Installation
 
@@ -38,7 +38,7 @@ remotes::install_github("brunomontezano/HCLpsychometrics")
 
 ## Examples
 
-### Confirmatory factor analysis
+### Confirmatory Factor Analysis
 
 ```{r}
 library(HCLpsychometrics)
@@ -60,11 +60,17 @@ summarize_parameters(
   ) %>% purrr::map(head, 3)
 ```
 
-## Cronbach's alpha
+As can be seen from the output of the functions, they work in order to fit three models for CFA: a model by Bech et al. (2011), another by Forty et al. (2010) and a third model called HCL-28, developed by the authors of the paper. 
+
+## Cronbach's Alpha
 
 ```{r}
-# The alpha_authors_model function can be used to calculate Cronbach's
-# alpha based on the author's model in the input dataset
-HCLpsychometrics::alpha_authors_model(hcl)
+# The alpha_hcl28 function can be used to calculate Cronbach's
+# alpha based on the HCL-28 model in the input dataset
+HCLpsychometrics::alpha_hcl28(hcl)
 ```
+
+As you can see from the output, the `alpha_hcl28` function generates
+Cronbach's alpha for the structure (HCL-28) as a whole, and separately
+by factor.
 
