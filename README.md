@@ -14,6 +14,12 @@ instrument in a population sample. The package has functions for
 executing routines for confirmatory factor analysis and ordinal alpha
 coefficient estimation.
 
+#### Note
+
+This repository is not intended to be used by others. It is a package
+aggregating several tools used to replicate the specific analysis of an
+article.
+
 ## Installation
 
 The current version can be installed from [GitHub](https://github.com/)
