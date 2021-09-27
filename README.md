@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# HCL-32 Psychometric Properties
+# HCL-32 Psychometric Properties <a href='https://github.com/brunomontezano/HCLpsychometrics/'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
