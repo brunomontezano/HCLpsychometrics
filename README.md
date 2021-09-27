@@ -78,6 +78,10 @@ fit three models for CFA: a model by Bech et al. (2011), another by
 Forty et al. (2010) and a third model called HCL-28, developed by the
 authors of the paper.
 
+Note that the `summarize_fit` and `summarize_parameters` functions’
+outputs are returned as an R list, facilitating the individual check of
+the results of each model through the elements in this list.
+
 ## Cronbach’s Alpha
 
 ``` r
