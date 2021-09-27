@@ -82,7 +82,7 @@ Note that the `summarize_fit` and `summarize_parameters` functions’
 outputs are returned as an R list, facilitating the individual check of
 the results of each model through the elements in this list.
 
-## Cronbach’s Alpha
+### Cronbach’s Alpha
 
 ``` r
 # The alpha_hcl28 function can be used to calculate Cronbach's
@@ -101,3 +101,9 @@ HCLpsychometrics::alpha_hcl28(hcl)
 As you can see from the output, the `alpha_hcl28` function generates
 Cronbach’s alpha for the structure (HCL-28) as a whole, and separately
 by factor.
+
+## Contact
+
+Feel free to contact me here on
+[GitHub](https://github.com/brunomontezano) or
+[ResearchGate](https://www.researchgate.net/profile/Bruno-Braga-Montezano).
