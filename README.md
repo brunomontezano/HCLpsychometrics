@@ -102,6 +102,12 @@ As you can see from the output, the `alpha_hcl28` function generates
 Cronbach’s alpha for the structure (HCL-28) as a whole, and separately
 by factor.
 
+## Acknowledgement
+
+I would like to thank designer [Guilherme
+Bueno](https://guilhermebuenodesign.github.io/) for creating the
+repository logo.
+
 ## Contact
 
 Feel free to contact me here on
