@@ -108,6 +108,8 @@ I would like to thank designer [Guilherme
 Bueno](https://guilhermebuenodesign.github.io/) for creating the
 repository logo.
 
+Logo icon adapted from [Freepik](https://www.freepik.com/).
+
 ## Contact
 
 Feel free to contact me here on
